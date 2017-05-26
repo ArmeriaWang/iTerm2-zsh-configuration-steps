@@ -61,7 +61,7 @@ $ brew list
 ```bash
 $ git clone https://github.com/altercation/solarized.git
 ```
-​	解压后找到iTerm2的目录，发现有两个配色文件。把它们从`Profiles`→`Colors`选项卡中`Load Presets`→`Import...`进来，选择其一即可。如果觉得颜色黯淡，可将`Profiles`→`Text`选项卡中勾掉`Draw bold text in bright colors`。
+　　解压后找到iTerm2的目录，发现有两个配色文件。把它们从`Profiles`→`Colors`选项卡中`Load Presets`→`Import...`进来，选择其一即可。如果觉得颜色黯淡，可将`Profiles`→`Text`选项卡中勾掉`Draw bold text in bright colors`。
 
 - 保留所有历史输出，`Profiles` → `Terminal`→`Scrollback Buffer`中勾选`Unlimited Scrollback`。
 
