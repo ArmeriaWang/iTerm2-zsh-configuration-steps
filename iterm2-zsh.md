@@ -76,7 +76,7 @@ $ git clone https://github.com/altercation/solarized.git
 
 macOS预装了6种shell版本，其中Z shell (zsh)可拓展性最强，但前期配置繁琐。所幸开源项目oh-my-zsh为zsh使用者提供了一键式配置方案。
 
-macOS中自带的zsh版本较老，但不宜覆盖更新。可先通过Homebrew安装最新版zsh。
+macOS中自带的zsh版本较老，但不宜直接覆盖更新。可先通过Homebrew安装最新版zsh。
 
 ```bash
 $ brew install zsh
