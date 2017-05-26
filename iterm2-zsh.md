@@ -21,7 +21,7 @@ $ source ~/.bash_profile
 ```
 
 
-**安装Homebrew**。（来自 brew.sh ）
+**安装Homebrew**。（来自 brew.sh）
 
 ``` bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -74,9 +74,9 @@ $ git clone https://github.com/altercation/solarized.git
 
 ### 配置zsh
 
-macOS预装了6种shell版本，其中Z shell (zsh)可拓展性最强，但前期配置繁琐。所幸开源项目oh-my-zsh为zsh使用者提供了一键式配置方案。
+macOS预装了6种shell版本，其中Z shell (zsh)被认为功能强大，可拓展性最强，但前期配置相当繁琐。所幸开源项目oh-my-zsh为zsh使用者提供了一键式配置方案。
 
-macOS中自带的zsh版本较老，但不宜直接覆盖更新。可先通过Homebrew安装最新版zsh。
+macOS中自带的zsh版本较老，但不宜直接覆盖更新。可先通过Homebrew安装最新版zsh（若可以接受系统自带的zsh，可跳过相关步骤）。
 
 ```bash
 $ brew install zsh
@@ -105,7 +105,7 @@ $ chsh -s /usr/local/bin/zsh
 
 完成后重启iTerm2，此时使用的Shell就不再是bash了。再次检查当前使用的zsh版本，就和安装的版本相同了。
 
-这样，以后zsh若再有更新，也只需用Homebrew更新即可：
+这样，若以后zsh再有更新，也只需用Homebrew更新即可：
 
 ```bash
 $ brew reinstall zsh
