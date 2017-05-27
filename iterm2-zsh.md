@@ -58,7 +58,7 @@ $ brew list
 
   若对预设配置方案不满意又不愿意倒腾，可直接从git下载Solarized主题（默认下载目录是 `~/`），
 
-```bash
+```shell
 $ git clone https://github.com/altercation/solarized.git
 ```
 　　解压后找到iTerm2的目录，发现有两个配色文件。把它们从`Profiles`→`Colors`选项卡中`Load Presets`→`Import...`进来，选择其一即可。如果觉得颜色黯淡，可将`Profiles`→`Text`选项卡中勾掉`Draw bold text in bright colors`。
@@ -78,7 +78,7 @@ macOS预装了6种shell版本，其中Z shell (zsh)被认为功能强大，可�
 
 macOS中自带的zsh版本较老，但不宜直接覆盖更新。可先通过Homebrew安装最新版zsh（若可以接受系统自带的zsh，可跳过相关步骤）。
 
-```bash
+```shell
 $ brew install zsh
 
 #版本号1：通过如下命令查看的“当前安装的zsh版本”
@@ -107,21 +107,21 @@ $ chsh -s /usr/local/bin/zsh
 
 这样，若以后zsh再有更新，也只需用Homebrew更新即可：
 
-```bash
-$ brew reinstall zsh
+```powershell
+▶ brew reinstall zsh
 ```
 
 然后就是重头戏，oh-my-zsh。有两种安装方式，推荐第二种：
 
-```bash
-$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+```powershell
+▶ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 #或
-$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+▶ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
 
 完成后，打开`~/.zshrc`文件，内有全部的预设配置和说明，可以自行更改。下面仅列出几条：
 
-```bash
+```powershell
 #zsh主题，默认robbyrussell
 ZSH_THEME="robbyrussell"
 
