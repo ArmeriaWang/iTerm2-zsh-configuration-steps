@@ -56,7 +56,7 @@ $ brew list
 
 - 颜色配置：
 
-  若对预设配置方案不满意又不愿意倒腾，可直接从git下载Solarized主题（默认下载目录是 `~/`），
+  若对预设配置方案不满意又不愿意倒腾，可直接从git下载Solarized主题（默认下载目录是当前目录），
 
 ```shell
 $ git clone https://github.com/altercation/solarized.git
