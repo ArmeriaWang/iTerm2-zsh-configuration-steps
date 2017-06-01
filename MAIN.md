@@ -111,7 +111,7 @@ $ chsh -s /usr/local/bin/zsh
 ▶ brew reinstall zsh
 ```
 
-然后就是重头戏，oh-my-zsh。有两种安装方式，推荐第二种：
+然后就是重头戏，[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)。有两种安装方式，推荐第二种：
 
 ```powershell
 ▶ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -129,16 +129,19 @@ ZSH_THEME="robbyrussell"
 DEFAULT_USER="userName"
 
 #添加自己需要的插件
-plugins=(git brew) 
+plugins=(git osx autojump)
 
 #alias X="Y"，将Y简写为X，如
 alias ..="cd .."
-alias ga="git add"
+alias gpom="git push origin master"
+alias sc="source"
 ```
 
+修改完毕后，重启iTerm2或`source ~/.zshrc`即可使之生效。
+
+oh-my-zsh提供的插件大都配备说明文档`README.md`，可在`~/.oh-my-zsh/plugin/pluginName`目录下查看。
+
 更多zsh主题可在[这里](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)预览。推荐avit，agnoster或ys。
-
-
 
 更多的iTerm2、zsh的使用/配置技巧请参阅网络资料。
 
@@ -147,3 +150,34 @@ alias ga="git add"
 参考链接：
 
 [【1】](http://yijiebuyi.com/blog/b9b5e1ebb719f22475c38c4819ab8151.html)	[【2】](http://yijiebuyi.com/blog/9c6419897949a7935d0fdec74cb7c61b.html)	[【3】](http://www.jianshu.com/p/bb1c97269b11)	[【4】](http://www.tuicool.com/articles/FFN7Vbq)	
+
+
+
+---
+
+
+
+## 附一  Linux下安装zsh
+
+Ubuntu一般不自带zsh，需手动用安装，其余多数过程与macOS下相同。简要命令如下，
+
+```bash
+#安装zsh
+$ sudo apt-get install zsh
+
+#安装oh-my-zsh，之后zsh配置的过程与macOS下相同
+$ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+#更改默认shell
+$ chsh -s /usr/bin/zsh
+#若不起作用，可修改bash的配置
+$ vi ~/.bashrc
+#在文件首部插入一行
+zsh
+```
+
+
+
+## 附二  相关个人配置文件
+
+可在我的GitHub项目[iTerm2-zsh-configuration-steps](https://github.com/Hakuwannng/iTerm2-zsh-configuration-steps)中查阅。包括`.vimrc`，`.zshrc`，`.bashrc`（`.bash_profile`）等。
